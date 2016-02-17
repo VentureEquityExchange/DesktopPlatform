@@ -1,0 +1,40 @@
+{
+  "name": "desktop-platform",
+  "productName": "desktop-platform",
+  "version": "0.0.1",
+  "description": "Provides a starting point for Ethereum-powered Desktop Applications",
+  "main": "electron-main.js",
+  "electronVersion": "0.36.3",
+  "scripts": {
+    "test": "npm test",
+    "start": "node_modules/.bin/electron .",
+    "build": "electron-packager . $npm_package_productName --out=packaged --icon='icon.icns' --overwrite --ignore='^/packaged --prune --platform=darwin --arch=x64 --version=$npm_package_electronVersion"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VentureEquityExchange/DesktopPlatform.git"
+  },
+  "keywords": [
+    "Ethereum",
+    "Desktop",
+    "Electron",
+    "React"
+  ],
+  "author": "Ryan Michael Tate",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VentureEquityExchange/DesktopPlatform/issues"
+  },
+  "homepage": "https://github.com/VentureEquityExchange/DesktopPlatform#readme",
+  "devDependencies": {
+    "electron-packager": "^5.2.1",
+    "jspm": "^0.16.29"
+  },
+  "jspm": {
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
